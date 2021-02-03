@@ -26,8 +26,24 @@ html {
   text-align: center;
   color: white;
 }
+@media (min-width: 48em) {
+  .container {
+    background-image: url("./../assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 491px 767px;
+    background-position: top right;
+    box-shadow: none;
+  }
+}
 .container header {
   margin-top: 8vh;
+}
+@media (min-width: 48em) {
+  .container header {
+    display: flex;
+    margin-left: 38px;
+  }
 }
 .container .form-request {
   display: flex;
@@ -35,6 +51,15 @@ html {
   margin: 5px auto 60px;
   width: 327px;
   height: 398px;
+}
+@media (min-width: 48em) {
+  .container .form-request {
+    background-color: black;
+    width: 635px;
+    height: 509px;
+    text-align: left;
+    margin: 152px auto auto 38px;
+  }
 }
 .container .form-request .main-title {
   font-weight: 300;
@@ -45,48 +70,101 @@ html {
   font-size: 1.5rem;
   font-weight: 300;
   color: #56e6af;
-  background-color: #2b334a;
+}
+@media (min-width: 48em) {
+  .container .form-request .main-title h1 {
+    font-size: 3rem;
+    line-height: normal;
+    margin-top: 93px;
+  }
 }
 .container .form-request .main-title > span {
   font-size: 1.5rem;
   font-weight: 300;
   color: white;
 }
+@media (min-width: 48em) {
+  .container .form-request .main-title > span {
+    font-size: 3rem;
+    line-height: normal;
+  }
+}
 .container .form-request .description {
   font-size: 0.938rem;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.75rem;
   color: #c2cbe5;
   margin-top: 20px;
   margin-bottom: 35px;
+}
+@media (min-width: 48em) {
+  .container .form-request .description {
+    width: 27.813rem;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+  }
 }
 .container .form-request .media-icons {
   width: 313.85px;
   display: flex;
   margin: auto;
 }
+@media (min-width: 48em) {
+  .container .form-request .media-icons {
+    order: 2;
+    width: 536px;
+    height: 29px;
+    margin: 45px auto auto 0;
+  }
+}
 .container .form-request .media-icons > img {
   height: 19px;
   margin: auto;
   filter: opacity(0.4);
 }
+@media (min-width: 48em) {
+  .container .form-request .media-icons > img {
+    width: auto;
+    height: auto;
+    margin: auto auto 0 0;
+  }
+  .container .form-request .media-icons > img:first-child {
+    margin-left: 0;
+  }
+}
 .container .form-request .media-icons .img-sm {
   height: 15px;
+}
+@media (min-width: 48em) {
+  .container .form-request .media-icons .img-sm {
+    height: auto;
+  }
 }
 .container .form-request .buttons {
   margin-top: 40px;
   display: grid;
   grid-gap: 25px;
+  position: relative;
+}
+@media (min-width: 48em) {
+  .container .form-request .buttons {
+    width: 26.688rem;
+  }
 }
 .container .form-request .buttons input {
   padding: 15px 32px;
 }
+@media (min-width: 48em) {
+  .container .form-request .buttons input {
+    padding: 19px 32px;
+  }
+}
 .container .form-request .buttons input, .container .form-request .buttons input::placeholder, .container .form-request .buttons input:focus {
-  background-color: #5b678b;
+  background-color: #2b334a;
   outline: none;
   border: none;
   color: #c2cbe5;
-  border-radius: 24px;
+  border-radius: 58px;
   font-weight: 700;
   font-size: 14px;
   overflow: -moz-hidden-unscrollable;
@@ -100,6 +178,24 @@ html {
   font-weight: 700;
   font-size: 14px;
   padding: 15px;
+}
+@media (min-width: 48em) {
+  .container .form-request .buttons button {
+    order: 1;
+    position: absolute;
+    right: 0.3rem;
+    top: 6%;
+    padding: 16px 26px;
+  }
+}
+.container .dot-background > img {
+  display: none;
+}
+@media (min-width: 48em) {
+  .container .dot-background > img {
+    display: flex;
+    margin: auto auto 0 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

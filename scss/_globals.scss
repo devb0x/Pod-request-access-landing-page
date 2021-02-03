@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 html {
   font-size: 100%;
@@ -29,8 +30,22 @@ html {
   text-align: center;
   color: $white;
 
+  @include breakpoint-up(tablet){
+    background-image: url("./../assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: 491px 767px;
+    background-position: top right;
+    box-shadow: none;
+  }
+
   header {
     margin-top: 8vh;
+
+    @include breakpoint-up(tablet){
+      display: flex;
+      margin-left: 38px;
+    }
   }
 
   .form-request {
@@ -39,6 +54,14 @@ html {
     margin: 5px auto 60px;
     width: 327px;
     height: 398px;
+
+    @include breakpoint-up(tablet){
+      background-color: black;
+      width: 635px;
+      height: 509px;
+      text-align: left;
+      margin: 152px auto auto 38px;
+    }
 
     .main-title {
       font-weight: 300;
@@ -50,22 +73,37 @@ html {
       font-size: 1.5rem;
       font-weight: 300;
       color: $lightGreen;
-      background-color: $darkGrey;
+      @include breakpoint-up(tablet){
+        font-size: 3rem;
+        line-height: normal;
+        margin-top: 93px;
+      }
     }
 
     .main-title > span {
       font-size: 1.5rem;
       font-weight: 300;
       color: $white;
+
+      @include breakpoint-up(tablet){
+        font-size: 3rem;
+        line-height: normal;
+      }
     }
 
     .description {
       font-size: 0.938rem;
       font-weight: 300;
-      line-height: 1.7;
+      line-height: 1.75rem;
       color: $veryLightGrey;
       margin-top: 20px;
       margin-bottom: 35px;
+
+      @include breakpoint-up(tablet){
+        width: 27.813rem;
+        font-size: 1.125rem;
+        margin-bottom: 0;
+      }
     }
 
     .media-icons {
@@ -73,14 +111,36 @@ html {
       display: flex;
       margin: auto;
 
+      @include  breakpoint-up(tablet){
+        order: 2;
+        width: 536px;
+        height: 29px;
+        margin: 45px auto auto 0;
+      }
+
       > img {
         height: 19px;
         margin: auto;
         filter: opacity(0.4);
+
+        @include breakpoint-up(tablet){
+          width: auto;
+          height: auto;
+          margin: auto auto 0 0;
+
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
       }
 
       .img-sm {
         height: 15px;
+
+        @include breakpoint-up(tablet){
+          height: auto;
+        }
       }
     }
 
@@ -88,17 +148,26 @@ html {
       margin-top: 40px;
       display: grid;
       grid-gap: 25px;
+      position: relative;
+
+      @include breakpoint-up(tablet){
+        width: 26.688rem;
+      }
 
       input {
         padding: 15px 32px;
+
+        @include breakpoint-up(tablet){
+          padding: 19px 32px;
+        }
       }
 
       input, input::placeholder, input:focus {
-        background-color: $lightGrey;
+        background-color: $darkGrey;
         outline: none;
         border: none;
         color: $veryLightGrey;
-        border-radius: 24px;
+        border-radius: 58px;
         font-weight: 700;
         font-size: 14px;
         overflow: -moz-hidden-unscrollable;
@@ -113,10 +182,27 @@ html {
         font-weight: 700;
         font-size: 14px;
         padding: 15px;
+
+        @include breakpoint-up(tablet){
+          order: 1;
+          position: absolute;
+          right: 0.3rem;
+          top: 6%;
+          padding: 16px 26px;
+        }
       }
     }
 
+  } // end form-request
 
+  .dot-background > img{
+    display: none;
+
+    @include breakpoint-up(tablet) {
+      display: flex;
+      margin: auto auto 0 15px;
+    }
   }
-}
+
+} // end container
 
