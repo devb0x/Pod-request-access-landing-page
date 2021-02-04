@@ -12,6 +12,10 @@ html {
   font-family: "Chivo", sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 .container {
   background-image: url("./../assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
@@ -36,6 +40,13 @@ html {
     box-shadow: none;
   }
 }
+@media (min-width: 56.25em) {
+  .container {
+    background-image: url("./../assets/desktop/image-host.jpg");
+    background-size: 962px 640px;
+    margin-top: 130px;
+  }
+}
 .container header {
   margin-top: 8vh;
 }
@@ -43,6 +54,19 @@ html {
   .container header {
     display: flex;
     margin-left: 38px;
+  }
+}
+@media (min-width: 56.25em) {
+  .container header {
+    margin-top: 0;
+    margin-left: 165px;
+  }
+}
+@media (min-width: 56.25em) {
+  .container header img {
+    position: absolute;
+    left: 10%;
+    top: 10%;
   }
 }
 .container .form-request {
@@ -61,6 +85,14 @@ html {
     margin: 152px auto auto 38px;
   }
 }
+@media (min-width: 56.25em) {
+  .container .form-request {
+    margin-left: 10%;
+    margin-top: 140px;
+    width: 723px;
+    height: 509px;
+  }
+}
 .container .form-request .main-title {
   font-weight: 300;
   text-transform: uppercase;
@@ -76,6 +108,13 @@ html {
     font-size: 3rem;
     line-height: normal;
     margin-top: 93px;
+  }
+}
+@media (min-width: 56.25em) {
+  .container .form-request .main-title h1 {
+    font-size: 52px;
+    letter-spacing: normal;
+    margin-top: 90px;
   }
 }
 .container .form-request .main-title > span {
@@ -195,6 +234,13 @@ html {
   .container .dot-background > img {
     display: flex;
     margin: auto auto 0 15px;
+  }
+}
+@media (min-width: 56.25em) {
+  .container .dot-background > img {
+    position: absolute;
+    bottom: 76px;
+    right: 0;
   }
 }
 

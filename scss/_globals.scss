@@ -15,6 +15,10 @@ html {
   font-family: 'Chivo', sans-serif;
 }
 
+body {
+  background-color: black;
+}
+
 
 .container {
   background-image: url("./../assets/mobile/image-host.jpg");
@@ -38,6 +42,11 @@ html {
     background-position: top right;
     box-shadow: none;
   }
+  @include breakpoint-up(desktop){
+    background-image: url("./../assets/desktop/image-host.jpg");
+    background-size: 962px 640px;
+    margin-top: 130px;
+  }
 
   header {
     margin-top: 8vh;
@@ -46,7 +55,18 @@ html {
       display: flex;
       margin-left: 38px;
     }
+    @include breakpoint-up(desktop){
+      margin-top: 0;
+      margin-left: 165px;
+    }
   }
+    header img {
+      @include breakpoint-up(desktop){
+        position: absolute;
+        left: 10%;
+        top: 10%;
+      }
+    }
 
   .form-request {
     display: flex;
@@ -61,6 +81,12 @@ html {
       height: 509px;
       text-align: left;
       margin: 152px auto auto 38px;
+    }
+    @include breakpoint-up(desktop){
+      margin-left: 10%;
+      margin-top: 140px;
+      width: 723px;
+      height: 509px;
     }
 
     .main-title {
@@ -77,6 +103,11 @@ html {
         font-size: 3rem;
         line-height: normal;
         margin-top: 93px;
+      }
+      @include breakpoint-up(desktop){
+        font-size: 52px;
+        letter-spacing: normal;
+        margin-top: 90px;
       }
     }
 
@@ -198,11 +229,30 @@ html {
   .dot-background > img{
     display: none;
 
-    @include breakpoint-up(tablet) {
+    @include breakpoint-up(tablet){
       display: flex;
       margin: auto auto 0 15px;
+    }
+    @include breakpoint-up(desktop){
+      //margin: 0 0 78px auto;
+      position: absolute;
+      bottom: 76px;
+      right: 0;
     }
   }
 
 } // end container
 
+//@media screen and (min-width: 1440px) and (min-height: 900px){
+//  .container {
+//    background-image: url("./../assets/desktop/image-host.jpg");
+//    background-size: 962px 640px;
+//    margin-top: 130px;
+//  }
+//  .container header {
+//    margin-left: 165px;
+//  }
+//  .container .form-request {
+//    margin-left: 165px;
+//  }
+//}
