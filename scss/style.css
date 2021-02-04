@@ -40,7 +40,7 @@ body {
     box-shadow: none;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container {
     background-image: url("./../assets/desktop/image-host.jpg");
     background-size: 962px 640px;
@@ -56,13 +56,13 @@ body {
     margin-left: 38px;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container header {
     margin-top: 0;
     margin-left: 165px;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container header img {
     position: absolute;
     left: 10%;
@@ -85,7 +85,7 @@ body {
     margin: 152px auto auto 38px;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container .form-request {
     margin-left: 10%;
     margin-top: 140px;
@@ -110,7 +110,7 @@ body {
     margin-top: 93px;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container .form-request .main-title h1 {
     font-size: 52px;
     letter-spacing: normal;
@@ -236,7 +236,7 @@ body {
     margin: auto auto 0 15px;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 67.5em) {
   .container .dot-background > img {
     position: absolute;
     bottom: 76px;
