@@ -231,10 +231,9 @@ body {
 
     @include breakpoint-up(tablet){
       display: flex;
-      margin: auto auto 0 15px;
+      margin: auto auto 0 38px;
     }
     @include breakpoint-up(desktop){
-      //margin: 0 0 78px auto;
       position: absolute;
       bottom: 76px;
       right: 0;
@@ -243,16 +242,21 @@ body {
 
 } // end container
 
-//@media screen and (min-width: 1440px) and (min-height: 900px){
-//  .container {
-//    background-image: url("./../assets/desktop/image-host.jpg");
-//    background-size: 962px 640px;
-//    margin-top: 130px;
-//  }
-//  .container header {
-//    margin-left: 165px;
-//  }
-//  .container .form-request {
-//    margin-left: 165px;
-//  }
-//}
+.error-msg {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 1vh;
+  @include breakpoint-up(tablet){
+    padding-left: 32px;
+  }
+}
+.validate-msg {
+  color: $lightGreen;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 1vh;
+  @include breakpoint-up(tablet){
+    padding-left: 32px;
+  }
+}

@@ -19,7 +19,7 @@
       <img src="./assets/desktop/logo.svg" alt="Pod Logo">
     </header>
 
-    <form class="form-request">
+    <form class="form-request" id="form-subscribe" novalidate>
       <div class="main-title">
         <h1>Publish your podcasts </h1>
         <span class="test">everywhere.</span>
@@ -39,15 +39,18 @@
 
       <div class="buttons">
         <label for="email" style="display: none;">email</label>
-        <input type="text" placeholder="Email address" id="email">
-        <button type="button">Request Access</button>
+        <input type="email" placeholder="Email address" id="email">
+        <button type="submit">Request Access</button>
       </div>
+
+      <div id="info-message" style="display: none"></div>
     </form>
-    
+
     <div class="dot-background">
-      <img id="test" src="./assets/desktop/bg-pattern-dots.svg" alt="background pattern dots">
+      <img src="./assets/desktop/bg-pattern-dots.svg" alt="background pattern dots">
     </div>
   </div>
 
+  <script src="./js/script.js"></script>
 </body>
 </html>
