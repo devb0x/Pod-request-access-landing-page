@@ -17,11 +17,13 @@ form.addEventListener("submit", (e) => {
 
   if (form.email.value === '') {
     formMessage_div.innerText = messages[1];
+    formMessage_div.classList.remove('validate-msg');
     formMessage_div.classList.add('error-msg');
 
   } else if (form.email.value.match(validRegex)) {
     formMessage_div.classList.add('validate-msg');
     formMessage_div.innerText = messages[0];
+    form.email.value = '';
   } else {
     formMessage_div.classList.remove('validate-msg');
     formMessage_div.classList.add('error-msg');
