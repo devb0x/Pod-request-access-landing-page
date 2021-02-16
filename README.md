@@ -1,6 +1,6 @@
 # Frontend Mentor - Pod request access landing page
 
-![Design preview for the Pod request access landing page coding challenge](../../../../Users/hitb0x/Desktop/frontend%20mentor%20dl%20files%20travail%20en%20cours/pod-request-access-landing-page/pod-request-access-landing-page/preview.jpg)
+![Design preview for the Pod request access landing page coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
